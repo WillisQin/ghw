@@ -97,6 +97,8 @@ func (ctx *context) processorsGet() []*Processor {
 		first := procAttrs[lps[0]]
 		p.Model = first["model name"]
 		p.Vendor = first["vendor_id"]
+		p.Speed = first["cpu MHz"]
+		p.Cache = first["cache size"]
 		numCores, err := strconv.Atoi(first["cpu cores"])
 		if err != nil {
 			continue
