@@ -1,4 +1,4 @@
-module github.com/qinwei1314ai/ghw
+module github.com/WillisQin/ghw
 
 go 1.12
 
