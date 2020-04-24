@@ -33,8 +33,8 @@ func warn(msg string, args ...interface{}) {
 	if _, ok := os.LookupEnv(disableWarningsEnv); ok {
 		return
 	}
-	_, _ = fmt.Fprint(os.Stderr, "WARNING: ")
-	_, _ = fmt.Fprintf(os.Stderr, msg, args...)
+	//_, _ = fmt.Fprint(os.Stderr, "WARNING: ")
+	//_, _ = fmt.Fprintf(os.Stderr, msg, args...)
 }
 
 // Reads a supplied filepath and converts the contents to an integer. Returns
